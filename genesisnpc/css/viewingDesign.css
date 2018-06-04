@@ -1,0 +1,38 @@
+/*
+programmer ---> Christian Koback
+program ---> Genesis NPC : NPC Generator & Management
+Date started : September 2016
+Date stopped development: April 2017
+Purpose : Capstone (4th year  project)
+
+file: viewingDesign.css
+path: css/viewingDesign.css
+file description:  provides specific design for the displaying of 
+	templates/characters
+*/
+/*
+	get header/footer design
+	get column design
+	get textbox error styles
+*/
+@import url("basicDesign.css");
+
+p.sectionName{
+	font-weight:bold;
+	font-size: 1.875em;
+}
+p.properties{
+	font-weight:bold;
+}
+#leftColTemplate{
+	float: left;
+	min-width: 49%;
+	max-width:50%;
+	text-align: center;
+}
+#rightColTemplate{
+	float: right;
+	min-width: 49%;
+	max-width:50%;
+	text-align: center;
+}

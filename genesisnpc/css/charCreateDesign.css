@@ -1,0 +1,51 @@
+/*
+programmer ---> Christian Koback
+program ---> Genesis NPC : NPC Generator & Management
+Date started : September 2016
+Date stopped development: April 2017
+Purpose : Capstone (4th year  project)
+
+file: charCreateDesign.css
+path: css/charCreateDesign.css
+file description:  provide design specific to character creation
+*/
+
+
+#leftTop{
+	float:left;
+	padding: 0 0 80px 0;
+	min-width: 50%;
+}
+#rightTop{
+	float:right;
+	padding: 0 0 80px 0;
+	min-width: 50%;
+}
+/* 2 columns for char info input*/
+#leftSide{
+	float: left;
+	margin: 0 0 0 0;
+	min-width: 10px;
+	max-width: 10%;
+}
+#rightSide{
+	float: right;
+	min-width: 45%;
+}
+.menuButtons{
+	margin-top: 10px;
+}
+#centerSide{
+	margin: 0 0 0 10%;
+	max-width: 55%;
+}
+
+#title {
+	float:left;
+	min-width: 75%;
+	margin: 0 40% 20px 40%;
+}
+#logoutButton{
+	float:right;
+	min-width:20%;
+}

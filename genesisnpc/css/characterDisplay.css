@@ -1,0 +1,19 @@
+@import url("basicDesign.css");
+.menuButtons{
+	margin-top: 10px;
+}
+
+body{
+	background-image: url("partyForAll_feline.png");
+	background-size: 100%;
+}
+/*
+#title {
+	float:left;
+	min-width: 75%;
+	margin: 0 40% 20px 40%;
+}
+#logoutButton{
+	float:right;
+	min-width:20%;
+}*/

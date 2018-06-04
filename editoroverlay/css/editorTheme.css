@@ -1,0 +1,256 @@
+header{
+}
+body{
+	z-index= 0;
+	padding:0;
+	margin:0;
+}
+
+#logobar {
+	z-index:0;
+	background-color: #0799d3;
+	height: 10vh;
+}
+#logo{
+	max-width:100%;
+	max-height:100%;
+	float:left;
+}
+#title{
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	font-size:3em;
+	-webkit-text-stroke: 1px lightgray;
+}
+#logoutButton{
+	float: right;
+	margin-top:4vh;
+}
+#formSection{
+	z-index:0;
+	padding:0;
+	margin:0;
+	width: 100%;
+	height:10vh;
+}
+#forms{
+	position:static;
+	padding:0;
+	margin:0;
+	height:12vh;
+	width:100%;
+}
+
+#urlfields{
+	float:left;
+	width:49%;
+	padding:0;
+	margin:0;
+	display: inline-block;
+	border:0;
+}
+#filefields{
+	float:right;
+	display: inline-block;
+	width:49%;
+	padding:0;
+	margin:0;
+	border:0;
+}
+#urlSection1{
+	border:0 none;
+	float:left;
+	width:49%;
+	padding:0;
+	margin:0;
+}
+#urlSection2{
+	border:0 none;
+	float:right;
+	width:50%;
+	padding:0;
+	margin:0;
+}
+#urlSection1 fieldset{
+	border:0 none;
+	float:left;
+	padding:0;
+	margin:3px 3px 3px 10%;
+	overflow:hidden;
+}
+#urlSection2 fieldset{
+	border:0 none;
+	float:right;
+	padding:0;
+	margin:3px 10% 3px 3px;
+	overflow:hidden;
+}
+#fileContents{
+	height: 100%;
+	width:100%;
+}
+#fileSection1{
+	border:0 none;
+	float:left;
+	width:49%;
+	padding:0;
+	margin:0;
+}
+#fileSection2{
+	border:0 none;
+	float:right;
+	width:50%;
+	padding:0;
+	margin:0;
+}
+#fileSection2 fieldset{
+	border:0 none;
+	float:right;
+	padding:0;
+	margin:3px 10% 3px 3px;
+	overflow:hidden;
+}
+#fileSection1 fieldset{
+	border:0 none;
+	float:left;
+	margin:3px 3px 3px 10%;
+	overflow:hidden;
+	padding:0;
+}
+
+#filesave, #colorDisplay, #urlSubmit{
+	padding:0;
+	margin:10px 0 0 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 20vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    text-align:center;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modal-content div{
+	display: inline-block;
+	text-align:center;
+}
+.modal-content div input{
+	text-align:center;
+	display: block;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+.modal-content div h3{
+	text-align:center;
+	display: block;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+.modal-content div div{
+	margin:0 auto;
+	padding:0;
+}
+.modal-content div div *{
+	border: 0 none;
+}
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#frames{
+	position: static;
+	padding:0;
+	height:70vh;
+	margin:0;
+}
+#frame1{
+	position:absolute;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+#frame2{
+	position:absolute;
+	left:0;
+	height:100%;
+	width:100%;
+	border: 25px;
+	white-space: pre;
+	margin:2px 5px 2px 5px;
+}
+#invisibleFrame{
+	position:absolute;
+	left:0;
+	height:100%;
+	width:100%;
+	border: 25px;
+}
+#errors{
+	height:10vh;
+}
+#tempLink{
+	opacity:0;
+	z-index:-99;
+}
+#downloadIframe{
+	width: 0; 
+	height: 0;
+	border: 0 none;
+	z-index:99;
+}
+
+#fileInput{
+	padding:0;
+	margin:10px 0 0 0;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    background-color: #caccce;
+    display: inline-block;
+    border:1px solid black;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: darkgray;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}

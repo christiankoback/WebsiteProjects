@@ -1,0 +1,54 @@
+/*
+programmer ---> Christian Koback
+program ---> Genesis NPC : NPC Generator & Management
+Date started : September 2016
+Date stopped development: April 2017
+Purpose : Capstone (4th year  project)
+
+file: charTemplateDesign.css
+path: css/charTemplateDesign.css
+file description:  provide specific design for template creation
+*/
+/* 
+	get header/footer styles
+	get textbox error styles
+*/
+@import url("basicDesign.css");
+.showErrorParagraph{
+	text-color: red;
+}
+/* Provide page-specific design for info organization */
+body{
+	background-image: url("partyForAll_arrows.png");
+	background-size: 100%;
+	position:relative;
+	text-align: center;
+}
+#leftColTemplate{
+	float: left;
+	min-width: 49%;
+	max-width:50%;
+}
+#rightColTemplate{
+	float: right;
+	min-width: 49%;
+	max-width:50%;
+	padding-bottom: 200px;
+}
+
+.templateSection{
+	text-align:center;
+	opacity: 0.9;
+	background-color: #777;
+}
+.propSection{
+	text-align:center;
+	opacity: 0.7;
+	background-color: #575a5e;
+	margin : 10px 0 0 0;
+        padding : 10px 0 0 10%;
+}
+
+#templateSubmit{
+	margin:auto;
+}

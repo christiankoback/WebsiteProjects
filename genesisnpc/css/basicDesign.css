@@ -1,0 +1,145 @@
+/*
+programmer ---> Christian Koback
+program ---> Genesis NPC : NPC Generator & Management
+Date started : September 2016
+Date stopped development: April 2017
+Purpose : Capstone (4th year  project)
+
+file: basicDesign.css
+path: css/basicDesign.css
+file description:  ---> provide basic design concepts 
+	--->website universal
+*/
+
+
+/*static header location and footer info*/
+#header{
+	position:static;
+	padding: 0 0 80px 0;
+	color: #E6E6E6; 
+    	text-shadow: 5px 3px 5px #ADADAD;
+	text-align:center;
+}
+#header > * {
+  position: absolute;
+}
+body {
+	background-color: black;
+	color: #E6E6E6;
+	min-height:  80%;
+}
+#topLeft {
+	left: 0;
+	text-align:center;
+	min-width: 80%;
+}
+#topRight{
+	 right: 0;
+	 margin-right:50px;
+	 min-width: 20%;
+	 text-align:center;
+}
+#divSpace{
+	min-height: 60%;
+}
+footer{
+	bottom : 0;
+	margin: 30px 50% 0 0;
+	background-color: black;
+}
+#siteseal{
+	float:right;
+}
+#contactInfo{
+	position:relative;
+	font-size = xx-small;
+	float: right;
+}
+
+/*three column setup for body of info*/
+#leftSide{
+	float: left;
+	margin: 0 0 0 20px;
+	max-width: 20%;
+}
+#rightSide{
+	float: right;
+	min-width:40%;
+	max-width:80%;
+}
+#rightData{
+	margin:auto;
+}
+#centerSide{
+	margin: 0 0 0 10%;
+	min-width:40%;
+	max-width:80%;
+	text-align:center;
+}
+
+/* errors - textbox design*/
+.correctTextbox{
+	margin:0 10px 10px 10px; 
+}
+.errorTextbox{
+	margin:0 10px 10px 10px; 
+	border-color: red;
+	border-style: solid;
+}
+/*style the template/character name display to show hand pointer 
+	--> hand = user can click on name, pointer = cannot click
+	--> remove all border from template/character button for display choice
+
+*/
+input.templates{
+	background-color:transparent;
+	border: 0;
+	cursor: pointer;
+}
+input.templates:focus, input:focus{
+    outline: none;
+}
+input.characters{
+	background-color:transparent;
+	border: 0;
+	cursor: pointer;
+}
+input.characters:focus, input:focus{
+    outline: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee ;
+    opacity: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    padding: 10px 0 0 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS) */
+button.accordion.active{
+    background-color: #777;
+    opacity: 0.7;
+}
+div.panel {
+    padding: 0 0 0 5px;
+    background-color: white;
+    max-height: 0;
+    content: "↡";
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 0.7;
+    content: "↟";
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}

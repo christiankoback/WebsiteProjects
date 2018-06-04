@@ -1,0 +1,70 @@
+/*
+programmer ---> Christian Koback
+program ---> Genesis NPC : NPC Generator & Management
+Date started : September 2016
+Date stopped development: April 2017
+Purpose : Capstone (4th year  project)
+
+file: indexDesign.css
+path: css/indexDesign.css
+file description: provides all design for login/default page
+*/
+
+@import url("basicDesign.css");
+
+#title {
+	font-size: 150%;
+	text-align:center;
+}
+
+body {
+	background-image: url("dragon-1646411.jpg");
+	background-size: 100%;
+	background-color: black;
+	min-height:  80%;
+}
+
+.textbox {
+	margin:0 0 10px 0; 
+}
+#loginInfo {
+	text-align:center;
+}
+
+#registerInfo {
+	text-align:center;
+}
+.correctTextbox {
+	margin:0 10px 10px 10px; 
+}
+.errorTextbox {
+	margin:0 10px 10px 10px; 
+	border-color: red;
+	border-style: solid;
+}
+#buttonsBypassLogin {
+	margin: 30px 0 30px 0;
+}
+#register {
+	margin: 0 70px 0 70px ;
+}
+#guestLogin {
+	margin: 0 70px 0 70px ;
+}
+#buttonsRegister{
+	margin: 20px 0 20px 0;
+}
+#registered{
+	margin: 0 70px 0 70px ;
+}
+#backToLogin{
+	margin: 0 70px 0 70px ;
+}
+/*
+#wrap .statusmsg {
+    font-size: 12px; 
+    padding: 3px; 
+    background: #EDEDED;
+    border: 1px solid #DFDFDF;
+}
+*/

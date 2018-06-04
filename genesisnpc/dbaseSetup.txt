@@ -1,0 +1,53 @@
+CREATE DATABASE genesisNPC;
+
+CREATE TABLE genesisUser (
+user VARCHAR(50) NOT NULL, 
+userpwd VARCHAR(255) NOT NULL,
+security VARCHAR(255) NOT NULL,
+userId BIGINT(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(255) NOT NULL,
+hash VARCHAR(255) NOT NULL,
+active INT(1) NOT NULL DEFAULT '0',
+UNIQUE (user)
+);
+
+CREATE TABLE DataList (
+UserID BIGINT(255) NOT NULL, 
+DateCreated VARCHAR(255) NOT NULL,
+type VARCHAR(2) NOT NULL,
+name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE genesisGuest (
+guestAmount BIGINT(255) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+type VARCHAR(255) NOT NULL,
+guestLogin BIGINT(255) NOT NULL,
+name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO genesisUser (user,userpwd,security,email) VALUES ("guest","0000", "0000", "0000");
+
+/*
+	the tables below are created dynamically
+		via createTemplate & createCharacter functions
+*/
+
+CREATE TABLE CharTable (
+CharID BIGINT(255) NOT NULL, 
+PropertyName VARCHAR(255) NOT NULL,
+Value VARCHAR(255) NOT NULL,
+SectName VARCHAR(255) NOT NULL,
+Description VARCHAR(255) NOT NULL,
+SectType VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE TemTable (
+TemID BIGINT(255) NOT NULL, 
+PropertyName VARCHAR(255) NOT NULL,
+LowRangeVal INT(255) NOT NULL,
+HighRangeVal INT(255) NOT NULL,
+SectName VARCHAR(255) NOT NULL,
+Description VARCHAR(255) NOT NULL,
+SectType VARCHAR(255) NOT NULL
+);
+
